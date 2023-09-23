@@ -113,14 +113,14 @@
       ctx.rotate((((360 / num) * i - rotateDeg) * Math.PI) / 180);
       ctx.arc(0, 0, 250, 0, (2 * Math.PI) / num, false); // Radius
       if (i % 2 == 0) {
-        ctx.fillStyle = "#ffb820";
+        ctx.fillStyle = "#0548a8";
       } else {
-        ctx.fillStyle = "#ffcb3f";
+        ctx.fillStyle = "#1860b5";
       }
       ctx.fill();
-      ctx.lineWidth = 1;
-      ctx.strokeStyle = "#e4370e";
-      ctx.stroke();
+      ctx.lineWidth = 0;
+      ctx.strokeStyle = "none";
+      // ctx.stroke();
       ctx.restore();
       var prizeList = opts.prizes;
       html.push('<li class="hc-luckywheel-item"> <span style="');
